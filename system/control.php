@@ -37,13 +37,13 @@ foreach ($Clases as $key) {
         $modelo = $rowenlace[$menusuf."modelo"];
         $jquery = $rowenlace[$menusuf."jquery"];
     }
-    if($modelo!=""){
+    if($modelo!="" and $_POST[actd]==""){
         include($modelo);
     }
     if($enlace!=""){
         include($enlace);
     }
-    if($jquery!=""){
+    if($jquery!="" and $_POST[actd]==""){
         ?>
     <script>
         <?php include($jquery);?>

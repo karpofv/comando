@@ -1,8 +1,8 @@
 <?php
-    $ruta_base = "http://10.10.10.14:8000/comando";
-    $redir = "http://10.10.10.14:8000/comando/index.php";
+    $ruta_base = "http://localhost/comando";
+    $redir = "http://localhost/comando/index.php";
     $auth_table = "usuarios";
-    $img_perfil = "http://10.10.10.14:8000/comando/assets/img/img_perfil";
+    $img_perfil = "http://localhost/comando/assets/img/img_perfil";
 
 //Errores
     $info[0]="No se pudo conectar con la bd";
