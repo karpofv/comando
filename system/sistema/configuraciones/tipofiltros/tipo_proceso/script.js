@@ -1,4 +1,4 @@
-$('#table_resultado').DataTable({
+$('#table_tipoproceso').DataTable({
     pageLength: 25
     , responsive: true
     , dom: '<"html5buttons"B>lTfgitp'

@@ -1,24 +1,31 @@
-$('#table_resultado').DataTable({
-    pageLength: 25
+$('#table_centros').DataTable({
+    language: {
+        url: "<?php echo $ruta_base;?>/assets/js/Spanish.json"
+    }
+    ,pageLength: 10
+    , scrollX:true
     , responsive: true
     , dom: '<"html5buttons"B>lTfgitp'
     , buttons: [
         {
             extend: 'copy'
+            , text: 'Copiar'
         }
         , {
             extend: 'csv'
         }
         , {
             extend: 'excel'
-            , title: 'ExampleFile'
+            , title: 'Resultados de la busqueda'
         }
         , {
             extend: 'pdf'
-            , title: 'ExampleFile'
+            , title: 'Resultados de la busqueda'
         },
         {
             extend: 'print'
+            , title: 'Resultados de la busqueda'
+            , text: 'Imprimir'
             , customize: function (win) {
                 $(win.document.body).addClass('white-bg');
                 $(win.document.body).css('font-size', '10px');
